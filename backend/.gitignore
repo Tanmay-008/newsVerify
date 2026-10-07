@@ -1,0 +1,7 @@
+.env
+node_modules
+dist    
+*.pem
+private.pem
+public.pem
+Dockerfile
