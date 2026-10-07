@@ -4,4 +4,3 @@ dist
 *.pem
 private.pem
 public.pem
-Dockerfile
