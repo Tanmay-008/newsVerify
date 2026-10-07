@@ -34,4 +34,4 @@ jobs:
                 context: ./frontend
                 push: true
                 tags: |
-                  ${{ secrets.DOCKERHUB_USERNAME }}/url-shortener-frontend:1.0.${{ github.run_number }}
+                  ${{ secrets.DOCKERHUB_USERNAME }}/newsverify-frontend:1.0.${{ github.run_number }}
