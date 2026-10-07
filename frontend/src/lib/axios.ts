@@ -1,7 +1,7 @@
 import axios, { type AxiosRequestConfig, type AxiosResponse } from "axios";
 
 const axiosConfig = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:3000/api/v1",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://api-newsverify.tanmayshirbhayye.tech/api/v1",
   timeout: 15000,
   responseType: "json",
   withCredentials: true,
@@ -17,7 +17,7 @@ axiosConfig.interceptors.response.use(
 );
 
 interface ApiRequestParams extends AxiosRequestConfig {
-  method: "get" | "post" | "put" | "patch" | "delete"|string;
+  method: "get" | "post" | "put" | "patch" | "delete" | string;
   url: string;
   data?: any;
   params?: any;
