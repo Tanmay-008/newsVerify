@@ -5,8 +5,10 @@ import { mongoDBConnection } from './repositories/user.repositories';
 
 mongoDBConnection()
 
-app.listen(process.env.PORT, () => {
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 4000;
+const HOST = '0.0.0.0';
 
-    console.log(`Server is running on port ${process.env.PORT}`);
+app.listen(PORT, HOST, () => {
+    console.log(`NewsVerify Server is running on port:${PORT}`);
 
 })
